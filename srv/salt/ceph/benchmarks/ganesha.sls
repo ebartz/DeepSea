@@ -12,7 +12,7 @@ prep clients:
     - tgt_type: compound
     - sls: ceph.ganesha.benchmarks.prepare_clients
     - pillar:
-        'ganesha_server': {{ ganesha_server}}
+        'ganesha-server': {{ ganesha_server}}
 
 one subdir:
   salt.state:

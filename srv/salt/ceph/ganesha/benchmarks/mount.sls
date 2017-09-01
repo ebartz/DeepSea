@@ -11,4 +11,4 @@ create mount point:
 
 mount cephfs:
   cmd.run:
-    - name: mount -t nfs -o nfsvers=4 {{ salt['pillar.get']('ganesha-server') }}:/   {{ salt['pillar.get']('benchmark:work-directory') }}
+    - name: mount -t nfs -o nfsvers=4 {{ salt['pillar.get']('ganesha-server') }}:/cephfs   {{ salt['pillar.get']('benchmark:work-directory') }}
